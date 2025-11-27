@@ -1,0 +1,66 @@
+Loaded dataset with rows: 1549
+Classes: ['Corn' 'Cotton' 'Rice' 'Soybeans']
+Model: "sequential_11"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ masking_9 (Masking)             │ (None, 1, 5)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ bidirectional_5 (Bidirectional) │ (None, 1, 128)         │        35,840 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_16 (Dropout)            │ (None, 1, 128)         │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm_12 (LSTM)                  │ (None, 32)             │        20,608 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_22 (Dense)                │ (None, 16)             │           528 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_23 (Dense)                │ (None, 4)              │            68 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 57,044 (222.83 KB)
+ Trainable params: 57,044 (222.83 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 9s 36ms/step - accuracy: 0.4721 - loss: 1.3483 - val_accuracy: 0.5903 - val_loss: 1.3258 - learning_rate: 0.0010
+Epoch 2/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 8ms/step - accuracy: 0.6070 - loss: 1.1814 - val_accuracy: 0.5774 - val_loss: 1.1984 - learning_rate: 0.0010
+Epoch 3/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 13ms/step - accuracy: 0.6185 - loss: 1.0499 - val_accuracy: 0.6484 - val_loss: 0.9956 - learning_rate: 0.0010
+Epoch 4/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 14ms/step - accuracy: 0.6669 - loss: 0.9067 - val_accuracy: 0.6806 - val_loss: 0.9016 - learning_rate: 0.0010
+Epoch 5/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 15ms/step - accuracy: 0.5979 - loss: 0.8129 - val_accuracy: 0.6032 - val_loss: 0.8658 - learning_rate: 0.0010
+Epoch 6/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 15ms/step - accuracy: 0.6003 - loss: 0.7858 - val_accuracy: 0.6194 - val_loss: 0.8360 - learning_rate: 0.0010
+Epoch 7/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 14ms/step - accuracy: 0.6128 - loss: 0.7201 - val_accuracy: 0.6258 - val_loss: 0.8161 - learning_rate: 0.0010
+Epoch 8/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 14ms/step - accuracy: 0.6348 - loss: 0.6619 - val_accuracy: 0.5226 - val_loss: 0.8909 - learning_rate: 0.0010
+Epoch 9/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step - accuracy: 0.6138 - loss: 0.6237 - val_accuracy: 0.6129 - val_loss: 0.8161 - learning_rate: 0.0010
+Epoch 10/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 8ms/step - accuracy: 0.6207 - loss: 0.6348 - val_accuracy: 0.6548 - val_loss: 0.7349 - learning_rate: 0.0010
+Epoch 11/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 8ms/step - accuracy: 0.6699 - loss: 0.6060 - val_accuracy: 0.6290 - val_loss: 0.8128 - learning_rate: 0.0010
+Epoch 12/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 8ms/step - accuracy: 0.6027 - loss: 0.6373 - val_accuracy: 0.6613 - val_loss: 0.7253 - learning_rate: 0.0010
+Epoch 13/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 7ms/step - accuracy: 0.6605 - loss: 0.6160 - val_accuracy: 0.6452 - val_loss: 0.7722 - learning_rate: 0.0010
+Epoch 14/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 8ms/step - accuracy: 0.6618 - loss: 0.5625 - val_accuracy: 0.6226 - val_loss: 0.8159 - learning_rate: 0.0010
+Epoch 15/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 13ms/step - accuracy: 0.6466 - loss: 0.6213 - val_accuracy: 0.6129 - val_loss: 0.8241 - learning_rate: 0.0010
+Epoch 16/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 1s 14ms/step - accuracy: 0.6162 - loss: 0.5817 - val_accuracy: 0.6452 - val_loss: 0.7800 - learning_rate: 5.0000e-04
+Epoch 17/20
+39/39 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.6440 - loss: 0.6123 - val_accuracy: 0.6581 - val_loss: 0.7401 - learning_rate: 5.0000e-04
+10/10 ━━━━━━━━━━━━━━━━━━━━ 1s 67ms/step
+              precision    recall  f1-score   support
+
+        Corn       0.67      0.88      0.76        60
+      Cotton       0.60      0.94      0.74        34
+        Rice       0.24      0.54      0.33        26
+    Soybeans       0.89      0.56      0.69       190
+
+    accuracy                           0.66       310
+   macro avg       0.60      0.73      0.63       310
+weighted avg       0.76      0.66      0.68       310

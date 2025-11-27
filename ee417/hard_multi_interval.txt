@@ -1,0 +1,7 @@
+date
+5 days     11
+10 days     7
+20 days     3
+30 days     1
+15 days     1
+Name: count, dtype: int64

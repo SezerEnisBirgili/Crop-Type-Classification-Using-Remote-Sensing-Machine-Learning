@@ -1,0 +1,12 @@
+Dataset loaded. Rows: 1549
+Classes: ['Corn' 'Cotton' 'Rice' 'Soybeans']
+              precision    recall  f1-score   support
+
+        Corn       0.61      0.93      0.74        60
+      Cotton       0.69      0.97      0.80        34
+        Rice       0.32      0.62      0.42        26
+    Soybeans       0.94      0.59      0.73       190
+
+    accuracy                           0.70       310
+   macro avg       0.64      0.78      0.67       310
+weighted avg       0.80      0.70      0.71       310

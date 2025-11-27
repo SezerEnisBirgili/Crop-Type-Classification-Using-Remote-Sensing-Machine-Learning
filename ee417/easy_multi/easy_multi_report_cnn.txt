@@ -1,0 +1,79 @@
+Loaded: 31538 rows
+Model: "sequential_16"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ masking_13 (Masking)            │ (None, 21, 8)          │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv1d_12 (Conv1D)              │ (None, 21, 64)         │         1,600 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ batch_normalization_6           │ (None, 21, 64)         │           256 │
+│ (BatchNormalization)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_22 (Dropout)            │ (None, 21, 64)         │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv1d_13 (Conv1D)              │ (None, 21, 32)         │         6,176 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ global_max_pooling1d_6          │ (None, 32)             │             0 │
+│ (GlobalMaxPooling1D)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_32 (Dense)                │ (None, 64)             │         2,112 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_23 (Dropout)            │ (None, 64)             │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_33 (Dense)                │ (None, 4)              │           260 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 10,404 (40.64 KB)
+ Trainable params: 10,276 (40.14 KB)
+ Non-trainable params: 128 (512.00 B)
+Epoch 1/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 4s 4ms/step - accuracy: 0.3230 - loss: 1.4630 - val_accuracy: 0.7645 - val_loss: 0.7768
+Epoch 2/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.6650 - loss: 0.5877 - val_accuracy: 0.8065 - val_loss: 0.4990
+Epoch 3/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.7959 - loss: 0.3807 - val_accuracy: 0.8839 - val_loss: 0.3233
+Epoch 4/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 3s 4ms/step - accuracy: 0.8253 - loss: 0.3161 - val_accuracy: 0.9000 - val_loss: 0.3391
+Epoch 5/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 2s 4ms/step - accuracy: 0.8594 - loss: 0.2884 - val_accuracy: 0.8581 - val_loss: 0.4539
+Epoch 6/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.8710 - loss: 0.2267 - val_accuracy: 0.9194 - val_loss: 0.2528
+Epoch 7/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9063 - loss: 0.1795 - val_accuracy: 0.9355 - val_loss: 0.2221
+Epoch 8/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9057 - loss: 0.1713 - val_accuracy: 0.9290 - val_loss: 0.2329
+Epoch 9/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9218 - loss: 0.1574 - val_accuracy: 0.8871 - val_loss: 0.3302
+Epoch 10/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.8939 - loss: 0.1965 - val_accuracy: 0.9484 - val_loss: 0.1873
+Epoch 11/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.8824 - loss: 0.2462 - val_accuracy: 0.9258 - val_loss: 0.2602
+Epoch 12/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 2s 6ms/step - accuracy: 0.9155 - loss: 0.1598 - val_accuracy: 0.9097 - val_loss: 0.2800
+Epoch 13/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9228 - loss: 0.1444 - val_accuracy: 0.9581 - val_loss: 0.1901
+Epoch 14/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 2s 4ms/step - accuracy: 0.9125 - loss: 0.1732 - val_accuracy: 0.9129 - val_loss: 0.2847
+Epoch 15/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9176 - loss: 0.1512 - val_accuracy: 0.9419 - val_loss: 0.1941
+Epoch 16/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9150 - loss: 0.1715 - val_accuracy: 0.9419 - val_loss: 0.2372
+Epoch 17/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9325 - loss: 0.1286 - val_accuracy: 0.9484 - val_loss: 0.1856
+Epoch 18/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9286 - loss: 0.1410 - val_accuracy: 0.9452 - val_loss: 0.2013
+Epoch 19/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9392 - loss: 0.1104 - val_accuracy: 0.9452 - val_loss: 0.2073
+Epoch 20/20
+310/310 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9413 - loss: 0.1150 - val_accuracy: 0.9323 - val_loss: 0.2646
+10/10 ━━━━━━━━━━━━━━━━━━━━ 0s 21ms/step
+              precision    recall  f1-score   support
+
+        Corn       0.94      0.94      0.94        33
+      Cotton       0.77      0.98      0.86        48
+        Rice       0.94      1.00      0.97        31
+    Soybeans       0.98      0.91      0.94       198
+
+    accuracy                           0.93       310
+   macro avg       0.91      0.96      0.93       310
+weighted avg       0.94      0.93      0.93       310

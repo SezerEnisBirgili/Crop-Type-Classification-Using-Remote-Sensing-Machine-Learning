@@ -1,0 +1,16 @@
+Filtered dataset loaded. Number of rows: 31538
+Unique crop labels: ['Corn' 'Cotton' 'Rice' 'Soybeans']
+Sequences collected: 1549
+Original sequence shape: (20, 8)
+Padded shape: (1549, 21, 8)
+Train/Validation sizes: (1239, 168) (310, 168)
+              precision    recall  f1-score   support
+
+        Corn       1.00      0.94      0.97        33
+      Cotton       1.00      0.92      0.96        48
+        Rice       0.96      0.81      0.88        31
+    Soybeans       0.94      0.99      0.97       198
+
+    accuracy                           0.96       310
+   macro avg       0.98      0.91      0.94       310
+weighted avg       0.96      0.96      0.96       310

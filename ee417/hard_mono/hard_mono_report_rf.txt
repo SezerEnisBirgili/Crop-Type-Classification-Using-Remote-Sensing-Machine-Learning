@@ -1,0 +1,41 @@
+Dataset loaded. Number of rows: 5510
+Unique crop labels: ['Alfalfa' 'Barren' 'Corn' 'Cotton' 'Cucumbers' 'Dbl Crop WinWht/Sorghum'
+ 'Dbl Crop WinWht/Soybeans' 'Deciduous Forest' 'Dry Beans'
+ 'Evergreen Forest' 'Fallow/Idle Cropland' 'Herbs' 'Millet' 'Mixed Forest'
+ 'Oats' 'Other Hay/Non Alfalfa' 'Peanuts' 'Potatoes' 'Shrubland'
+ 'Sod/Grass Seed' 'Sorghum' 'Soybeans' 'Sunflower' 'Sweet Potatoes'
+ 'Tobacco' 'Watermelons' 'Winter Wheat']
+Train/Validation sizes: (4408, 5) (1102, 5)
+                          precision    recall  f1-score   support
+
+                 Alfalfa       0.12      0.11      0.11        18
+                  Barren       0.41      0.38      0.40        55
+                    Corn       0.23      0.16      0.19        57
+                  Cotton       0.20      0.20      0.20        60
+               Cucumbers       0.40      0.38      0.39        16
+ Dbl Crop WinWht/Sorghum       0.67      0.12      0.21        16
+Dbl Crop WinWht/Soybeans       0.44      0.38      0.41        60
+        Deciduous Forest       0.25      0.06      0.10        17
+               Dry Beans       0.10      0.05      0.06        21
+        Evergreen Forest       0.20      0.22      0.21        49
+    Fallow/Idle Cropland       0.00      0.00      0.00        17
+                   Herbs       0.23      0.34      0.28        41
+                  Millet       0.38      0.43      0.41        23
+            Mixed Forest       0.36      0.46      0.41        59
+                    Oats       0.40      0.33      0.36        12
+   Other Hay/Non Alfalfa       0.34      0.44      0.39        48
+                 Peanuts       0.17      0.19      0.18        58
+                Potatoes       0.34      0.34      0.34        58
+               Shrubland       0.45      0.51      0.48        53
+          Sod/Grass Seed       0.19      0.19      0.19        31
+                 Sorghum       0.25      0.27      0.26        56
+                Soybeans       0.13      0.09      0.11        64
+               Sunflower       0.36      0.33      0.35        42
+          Sweet Potatoes       0.10      0.09      0.10        55
+                 Tobacco       0.36      0.42      0.39        50
+             Watermelons       0.14      0.17      0.16        46
+            Winter Wheat       0.43      0.65      0.52        20
+
+                accuracy                           0.28      1102
+               macro avg       0.28      0.27      0.27      1102
+            weighted avg       0.28      0.28      0.27      1102

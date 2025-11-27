@@ -1,0 +1,102 @@
+Loaded: 101034 rows
+Model: "sequential_33"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ masking_25 (Masking)            │ (None, 24, 8)          │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv1d_24 (Conv1D)              │ (None, 24, 64)         │         1,600 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ batch_normalization_12          │ (None, 24, 64)         │           256 │
+│ (BatchNormalization)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_45 (Dropout)            │ (None, 24, 64)         │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv1d_25 (Conv1D)              │ (None, 24, 32)         │         6,176 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ global_max_pooling1d_12         │ (None, 32)             │             0 │
+│ (GlobalMaxPooling1D)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_66 (Dense)                │ (None, 64)             │         2,112 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_46 (Dropout)            │ (None, 64)             │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_67 (Dense)                │ (None, 27)             │         1,755 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 11,899 (46.48 KB)
+ Trainable params: 11,771 (45.98 KB)
+ Non-trainable params: 128 (512.00 B)
+Epoch 1/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 6s 3ms/step - accuracy: 0.0803 - loss: 3.5638 - val_accuracy: 0.3791 - val_loss: 2.3055
+Epoch 2/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - accuracy: 0.2637 - loss: 2.4120 - val_accuracy: 0.4273 - val_loss: 1.8202
+Epoch 3/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 3s 3ms/step - accuracy: 0.3450 - loss: 2.1530 - val_accuracy: 0.5355 - val_loss: 1.5847
+Epoch 4/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.3746 - loss: 2.0142 - val_accuracy: 0.5364 - val_loss: 1.5591
+Epoch 5/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.4374 - loss: 1.8410 - val_accuracy: 0.5818 - val_loss: 1.4494
+Epoch 6/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - accuracy: 0.4339 - loss: 1.7617 - val_accuracy: 0.5700 - val_loss: 1.4156
+Epoch 7/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 3s 3ms/step - accuracy: 0.4627 - loss: 1.6645 - val_accuracy: 0.5964 - val_loss: 1.3608
+Epoch 8/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.4916 - loss: 1.6038 - val_accuracy: 0.5536 - val_loss: 1.4240
+Epoch 9/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.4753 - loss: 1.6921 - val_accuracy: 0.5827 - val_loss: 1.3465
+Epoch 10/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - accuracy: 0.5079 - loss: 1.5592 - val_accuracy: 0.5909 - val_loss: 1.3319
+Epoch 11/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 3s 3ms/step - accuracy: 0.5101 - loss: 1.5582 - val_accuracy: 0.5755 - val_loss: 1.4124
+Epoch 12/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 3s 3ms/step - accuracy: 0.5070 - loss: 1.5822 - val_accuracy: 0.5982 - val_loss: 1.3334
+Epoch 13/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.5172 - loss: 1.5253 - val_accuracy: 0.5773 - val_loss: 1.3643
+Epoch 14/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 3s 3ms/step - accuracy: 0.5120 - loss: 1.5576 - val_accuracy: 0.6236 - val_loss: 1.2986
+Epoch 15/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.5257 - loss: 1.4564 - val_accuracy: 0.6491 - val_loss: 1.2629
+Epoch 16/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - accuracy: 0.5327 - loss: 1.5002 - val_accuracy: 0.5991 - val_loss: 1.3035
+Epoch 17/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 3s 3ms/step - accuracy: 0.5213 - loss: 1.5083 - val_accuracy: 0.5945 - val_loss: 1.3003
+Epoch 18/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 3s 3ms/step - accuracy: 0.5561 - loss: 1.3971 - val_accuracy: 0.6218 - val_loss: 1.2263
+Epoch 19/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.5490 - loss: 1.4215 - val_accuracy: 0.6264 - val_loss: 1.2448
+Epoch 20/20
+1100/1100 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - accuracy: 0.5629 - loss: 1.4051 - val_accuracy: 0.6291 - val_loss: 1.2413
+35/35 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step
+                          precision    recall  f1-score   support
+
+                 Alfalfa       0.26      0.60      0.36        15
+                  Barren       0.67      0.56      0.61        54
+                    Corn       0.80      0.66      0.73        50
+                  Cotton       0.65      0.67      0.66        52
+               Cucumbers       0.71      0.57      0.63        21
+ Dbl Crop WinWht/Sorghum       0.40      0.36      0.38        22
+Dbl Crop WinWht/Soybeans       0.94      0.76      0.84        66
+        Deciduous Forest       0.67      0.52      0.59        23
+               Dry Beans       0.26      0.40      0.31        20
+        Evergreen Forest       0.65      0.57      0.61        56
+    Fallow/Idle Cropland       0.15      0.18      0.17        11
+                   Herbs       0.71      0.62      0.66        58
+                  Millet       0.60      0.78      0.68        23
+            Mixed Forest       0.63      0.58      0.60        64
+                    Oats       0.41      0.50      0.45        14
+   Other Hay/Non Alfalfa       0.65      0.40      0.50        42
+                 Peanuts       0.81      0.83      0.82        70
+                Potatoes       0.90      0.91      0.91        47
+               Shrubland       0.57      0.87      0.69        52
+          Sod/Grass Seed       0.55      0.69      0.61        32
+                 Sorghum       0.67      0.69      0.68        42
+                Soybeans       0.71      0.10      0.17        52
+               Sunflower       0.53      0.31      0.39        29
+          Sweet Potatoes       0.66      0.78      0.71        58
+                 Tobacco       0.39      0.72      0.51        46
+             Watermelons       0.76      0.69      0.73        59
+            Winter Wheat       0.55      0.73      0.63        22
+
+                accuracy                           0.63      1100
+               macro avg       0.60      0.59      0.58      1100
+            weighted avg       0.66      0.63      0.62      1100

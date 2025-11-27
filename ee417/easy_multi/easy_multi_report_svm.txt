@@ -1,0 +1,13 @@
+Loaded dataset with rows: 31538
+Unique crop labels: ['Corn' 'Cotton' 'Rice' 'Soybeans']
+Sequences collected: 1549
+              precision    recall  f1-score   support
+
+        Corn       0.94      0.97      0.96        33
+      Cotton       0.81      0.98      0.89        48
+        Rice       0.94      0.97      0.95        31
+    Soybeans       0.98      0.92      0.95       198
+
+    accuracy                           0.94       310
+   macro avg       0.92      0.96      0.94       310
+weighted avg       0.95      0.94      0.94       310
