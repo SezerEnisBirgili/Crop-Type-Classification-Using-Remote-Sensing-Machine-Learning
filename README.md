@@ -91,7 +91,7 @@ Balanced sampling per class (150 points) using CDL.
 
 All models trained using 80/20 split and tuned via grid search.
 
-### 7**Visualization**
+### 7. **Visualization**
 Interactive maps and charts via **Folium** and **geemap** are provided for:
 - NDVI time series  
 - Class distribution  
