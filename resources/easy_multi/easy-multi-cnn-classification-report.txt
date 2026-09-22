@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+        Corn       0.96      1.00      0.98        22
+      Cotton       0.89      0.87      0.88        39
+        Rice       0.91      0.91      0.91        32
+    Soybeans       0.96      0.96      0.96       227
+
+    accuracy                           0.95       320
+   macro avg       0.93      0.94      0.93       320
+weighted avg       0.95      0.95      0.95       320

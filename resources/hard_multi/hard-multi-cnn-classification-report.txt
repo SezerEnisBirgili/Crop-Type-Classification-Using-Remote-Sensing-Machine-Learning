@@ -1,0 +1,26 @@
+                 precision    recall  f1-score   support
+
+        Alfalfa       0.82      0.90      0.86        20
+           Corn       0.83      0.74      0.78        46
+         Cotton       0.70      0.83      0.76        66
+      Cucumbers       0.82      0.50      0.62        18
+      Dry Beans       0.26      0.38      0.31        24
+          Herbs       0.71      0.74      0.73        47
+Honeydew Melons       0.67      0.33      0.44         6
+         Millet       0.83      0.95      0.89        21
+           Oats       0.88      0.78      0.82         9
+        Peanuts       0.93      0.91      0.92        55
+           Peas       1.00      0.96      0.98        25
+       Potatoes       1.00      0.98      0.99        45
+ Sod/Grass Seed       0.80      0.92      0.86        39
+        Sorghum       0.83      0.89      0.86        66
+       Soybeans       0.65      0.51      0.57        55
+      Sunflower       0.57      0.61      0.59        33
+ Sweet Potatoes       0.95      0.79      0.86        47
+        Tobacco       0.69      0.71      0.70        49
+    Watermelons       0.69      0.62      0.65        47
+   Winter Wheat       0.92      0.86      0.89        14
+
+       accuracy                           0.77       732
+      macro avg       0.78      0.75      0.75       732
+   weighted avg       0.78      0.77      0.77       732
