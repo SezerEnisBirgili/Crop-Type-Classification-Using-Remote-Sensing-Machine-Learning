@@ -93,17 +93,6 @@ Interactive maps and charts via Folium and geemap are provided for:
 - Sample point maps
 - Timestamp statistics
 
-## Key Results
-
-**Performance Summary (accuracy)**
-
-| Model | Easy Mono | Easy Multi | Hard Mono | Hard Multi |
-|---|---|---|---|---|
-| LSTM | 0.68 | 0.97 | 0.17 | 0.68 |
-| CNN | 0.78 | 0.93 | 0.17 | 0.62 |
-| Random Forest | 0.85 | 0.87 | 0.27 | 0.54 |
-| SVM | 0.71 | 0.84 | 0.19 | 0.59 |
-
 ## Insights & Discussion
 
 Multi-temporal data vastly improves accuracy over mono-temporal data across every model, with a single exception: Random Forest on the easy dataset, where the gain is marginal (0.85 → 0.87) compared to double-digit-point gains everywhere else.
