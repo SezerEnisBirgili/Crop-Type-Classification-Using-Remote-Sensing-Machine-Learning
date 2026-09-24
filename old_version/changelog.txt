@@ -1,0 +1,38 @@
+
+
+//////////////////////////////////
+Document Changes
+//////////////////////////////////
+
+
+Moved author attribution to the front
+
+Added Excluded Land Cover and Crop Classes in data collection section
+
+Added more actions to Dataset Construction & Preprocessing Pipeline
+
+Updated architecture diagrams for LSTM and CNN
+
+Expanded additional results section to be much larger and more legible
+
+Added Limitations section
+
+Added Bibliography
+
+Added 3 citations for dataset links and GitHub repository
+
+
+//////////////////////////////////
+Code Changes
+//////////////////////////////////
+
+
+Code refactored for better legibility
+
+Changed Map API to non-blocked Map API
+
+Generated new results after changes in code
+
+Changed LSTM and CNN model architectures
+
+Code now saves every generated image
