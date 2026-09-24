@@ -95,9 +95,9 @@ Interactive maps and charts via Folium and geemap are provided for:
 
 ## Insights & Discussion
 
-Multi-temporal data vastly improves accuracy over mono-temporal data across every model, with a single exception: Random Forest on the easy dataset, where the gain is marginal (0.85 → 0.87) compared to double-digit-point gains everywhere else.
+Multi-temporal data vastly improves accuracy over mono-temporal data across every model, with a single exception: Random Forest on the easy dataset, where the gain is marginal (0.88 → 0.96, +0.08) compared to double-digit-point gains everywhere else.
 
-LSTM benefits most from multi-temporal information and is the strongest model on the hardest classification task (Hard Multi), gaining 0.51 in accuracy over its mono-temporal score and outperforming every other model on the 20-class region once sequential NDVI patterns are available.
+LSTM shows one of the largest gains from multi-temporal information and is the strongest model on the hardest classification task (Hard Multi), improving from 0.21 to 0.79 (+0.58) over its mono-temporal score and outperforming every other model on the 20-class region once sequential NDVI patterns are available. SVM's relative gain on the hard dataset is slightly larger (+0.61), but that's mostly a reflection of its much weaker mono-temporal starting point rather than it becoming the strongest multi-temporal model.
 
 Random Forest is the best fast baseline model, especially for mono-temporal data, and trains the fastest of the four.
 
