@@ -1,3 +1,6 @@
+> **Note:** This is the new version of this project. To see the previous version, check the `old_version` folder. A summary of changes is available in `changelog.txt`, also located in `old_version`.
+
+
 # Crop Type Classification Using Remote Sensing & Machine Learning
 
 This repository presents a complete pipeline for crop type classification using remote sensing data and machine learning, built on top of Google Earth Engine (GEE), TensorFlow, and scikit-learn. The project compares traditional ML methods and deep learning models using both mono-temporal and multi-temporal Sentinel-2 datasets for agricultural monitoring.
