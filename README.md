@@ -77,12 +77,12 @@ Locations sampled per class from CDL: a minimum of 50 locations per class for th
 
 **6. Modeling**
 
-| Model | Mono-Temporal | Multi-Temporal |
-|---|---|---|
-| LSTM | ✔ (weaker; heavily adapted for non-sequential input) | ✔ Best performer |
-| CNN | ✔ | ✔ |
-| RF | ✔ Fastest | ✔ |
-| SVM | ✔ | ✔ (scales worse on complex data) |
+| Model | Easy Mono | Easy Multi | Hard Mono | Hard Multi |
+|---|---|---|---|---|
+| LSTM | 0.79 | 0.96 | 0.21 | 0.79 (Best performer) |
+| CNN | 0.76 | 0.95 | 0.20 | 0.77 |
+| RF | 0.88 (Fastest) | 0.96 | 0.31 | 0.76 |
+| SVM | 0.66 | 0.96 | 0.14 | 0.75 |
 
 All models trained on an 80/20 train-test split. LSTM and CNN were trained with a batch size of 32 for up to 80 epochs, though training typically stopped around epoch 20 once validation performance plateaued.
 
